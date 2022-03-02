@@ -10,8 +10,8 @@ export default {
   data () {
     return {
       color: 'white',
-      colors: ['darkblue', 'darkorange'],
-      selected: ['selected', '']
+      colors: ['darkblue', 'cornflowerblue', 'lightskyblue', 'lightseagreen', 'darkorange', 'sandybrown', 'blanchedalmond', 'khaki'],
+      selected: ['selected', '', '', '', '', '', '', '']
     }
   },
   methods: {

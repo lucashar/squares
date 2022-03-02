@@ -1,7 +1,6 @@
 <template>
-    <div class="squareText" :style="{ color: selectedColor }">Squares</div>
+    <div class="squareText" :style="{ color: selectedColor }">squares</div>
     <ColorSelector @selectColor="selectColor"/>
-    <br/>
     <div v-for="i in 10" :key="i">
       <span v-for="i in 10" :key="i">
         <Square :selectedColor="selectedColor"/>
