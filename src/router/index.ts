@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 import Squares from '../views/Squares.vue'
+import PageNotFound from '../views/PageNotFound.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -20,6 +21,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/squares',
     name: 'Squares',
     component: Squares
+  },
+  {
+    path: '/:catchall(.*)*',
+    name: 'PageNotFound',
+    component: PageNotFound
   }
 ]
 
